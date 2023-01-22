@@ -1,0 +1,44 @@
+{% include "header.html" %}
+{% block content %}
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{ url_for('static', filename='img/head-img.jpg')}})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>About</h1>
+            <span class="subheading"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <h2>What is Health Hacks?</h2>
+        <p>The Health Hacks blog was launched for the purpose of providing useful insight and data driven information
+          surrounding health and fitness topics. On this blog you can expect to find posts regarding athletic training
+          protocols, nutrition, neuroscience, and disease mitigation and prevention. Using academic research,
+          data analytics, and experience, Health Hacks hopes to bring you valuable insights which allow you to lead
+          a healthier, more active, and fulfilled life. </p>
+        <h2>Who is the Health Hacker?</h2>
+        <p>My name is Leo and I am the creator and curator of Health Hacks. I have always wanted to share valuable,
+          no-nonsense, information surrounding health and fitness. My own experience with sport performance and
+          autoimmune disease has motivated me to do so to help people who are searching for answers as I was.
+          I have intensely researched the fields of Sport and Biological Sciences since the age of 15. I additionally
+          have First Class Honours in Economics and am also a self-taught Python Developer. This site was in fact
+          a full stack development project created by me. Using the experience gained through national level sport
+          performance and training, my interest in biology and neuroscience, and my data science proficiencies, I hope
+          to bring both empirical and anecdotal value to topics surrounding health and athletic performance.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  {% include "footer.html" %}
+{% endblock %}
